@@ -8,19 +8,19 @@ window.onload = () => {
 
   for (let i = 0; i < listTitles.length; i++) {
     listTitles[i].addEventListener("click", (e) => {
-      
-      if (e.target.nextElementSibling.classList.contains("arrow-up")) {
-        e.target.nextElementSibling.classList.remove("arrow-up");
-        e.target.parentElement.nextElementSibling.classList.add("hide");
+      const sibling = e.target.nextElementSibling;
+      const parentSibling = e.target.parentElement.nextElementSibling;
+      if (sibling.classList.contains("arrow-up")) {
+        sibling.classList.remove("arrow-up");
+        parentSibling.style.maxHeight = 0;
       } else {
         for (let j = 0; j < listTitles.length; j++) {
           arrows[j].classList.remove("arrow-up");
-          contents[j].classList.add("hide");
+          contents[j].style.maxHeight = 0;
         }
-        e.target.nextElementSibling.classList.add("arrow-up");
-        e.target.parentElement.nextElementSibling.classList.remove("hide");
+        sibling.classList.add("arrow-up");
+        parentSibling.style.maxHeight = parentSibling.scrollHeight + "px";
       }
-
     });
   }
 }
