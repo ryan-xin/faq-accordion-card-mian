@@ -7,6 +7,23 @@ body {
   
 }
 
+h1, p {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: hsl(238, 29%, 16%);
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 400;  
+}
+
+/* ----------------------- Content ---------------------- */
+
 .main-wrapper {
   position: absolute;
   top: 50%;
@@ -17,6 +34,38 @@ body {
   height: 510px;
   background-color: #fff;
   border-radius: 20px;
+  box-shadow: 0px 30px 40px hsl(245, 40%, 50%);
+}
+
+.main-container {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.container-item {
+  flex-direction: row;
+  width: 100%;
+}
+
+.background-image {
+  background-image: url("/images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: left -550px bottom -150px;
+  height: 100%;
+}
+
+.middle-image {
+  background-image: url("/images/illustration-woman-online-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: left -55px bottom 60px;
+  height: 100%;
+}
+
+.upper-image {
+  position: absolute;
+  left: -80px;
+  top: 220px;
 }
 
 /* --------------------- Attribution -------------------- */
