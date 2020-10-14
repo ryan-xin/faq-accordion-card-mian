@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <script src="js/main.js"></script>
+  <title>Frontend Mentor | FAQ Accordion Card</title>
 </head>
 <body>
   <div class="main-wrapper">
@@ -18,29 +18,59 @@
           <img class="upper-image" src="images/illustration-box-desktop.svg" alt="box">
         </div>
       </div>
-      <div class="container-item">
+      <div class="container-item right-content">
         <h1>FAQ</h1>
-        <ul>
+        <ul class="accordion-list">
           <li>
-            <p class="list-title">How many team members can I invite?</p>
-            <p class="list-content">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+            <div class="title-wrapper accordion-container">
+              <p class="list-title container-item-title">How many team members can I invite?</p>
+              <img class="arrow container-item-arrow" src="images/icon-arrow-down.svg" alt="arrow">
+            </div>
+            <div class="list-content hide">
+              <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+            </div>
           </li>
+          <hr>
           <li>
-            <p class="list-title">What is the maximum file upload size?</p>
-            <p class="list-content">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+            <div class="title-wrapper accordion-container">
+              <p class="list-title container-item-title">What is the maximum file upload size?</p>
+              <img class="arrow container-item-arrow" src="images/icon-arrow-down.svg" alt="arrow">
+            </div>
+            <div class="list-content hide">
+              <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+            </div>
           </li>
+          <hr>
           <li>
-            <p class="list-title">How do I reset my password?</p>
-            <p class="list-content">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+            <div class="title-wrapper accordion-container">
+              <p class="list-title container-item-title">How do I reset my password?</p>
+              <img class="arrow container-item-arrow" src="images/icon-arrow-down.svg" alt="arrow">
+            </div>
+            <div class="list-content hide">
+              <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+            </div>
           </li>
+          <hr>
           <li>
-            <p class="list-title">Can I cancel my subscription?</p>
-            <p class="list-content">Yes! Send us a message and we’ll process your request no questions asked.</p>
+            <div class="title-wrapper accordion-container">
+              <p class="list-title container-item-title">Can I cancel my subscription?</p>
+              <img class="arrow container-item-arrow" src="images/icon-arrow-down.svg" alt="arrow">
+            </div>
+            <div class="list-content hide">
+              <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+            </div>
           </li>
+          <hr>
           <li>
-            <p class="list-title">Do you provide additional support?</p>
-            <p class="list-content">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+            <div class="title-wrapper accordion-container">
+              <p class="list-title container-item-title">Do you provide additional support?</p>
+              <img class="arrow container-item-arrow" src="images/icon-arrow-down.svg" alt="arrow">
+            </div>
+            <div class="list-content hide">
+              <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+            </div>
           </li>
+          <hr>
         </ul>
       </div>
     </div>

@@ -10,6 +10,7 @@ body {
 h1, p {
   font-family: 'Kumbh Sans', sans-serif;
   color: hsl(238, 29%, 16%);
+  line-height: 1.5em;
 }
 
 h1 {
@@ -19,10 +20,11 @@ h1 {
 
 p {
   font-size: 12px;
-  font-weight: 400;  
+  font-weight: 400;
+  color: hsl(240, 6%, 50%);
 }
 
-/* ----------------------- Content ---------------------- */
+/* ----------------------- Image ---------------------- */
 
 .main-wrapper {
   position: absolute;
@@ -44,7 +46,6 @@ p {
 }
 
 .container-item {
-  flex-direction: row;
   width: 100%;
 }
 
@@ -66,6 +67,69 @@ p {
   position: absolute;
   left: -80px;
   top: 220px;
+}
+
+/* ---------------------- Accordion --------------------- */
+
+.right-content {
+  padding: 70px 80px 40px 20px;
+}
+
+.accordion-list {
+  margin-top: 10px;
+}
+
+.list-title {
+  font-size: 14px;
+  margin: 8px 0;
+  font-weight: 700;
+  cursor: pointer;
+  color: hsl(237, 12%, 33%);
+  -moz-transition: color .2s;
+  -webkit-transition: color .2s;
+  -o-transition: color .2s;
+}
+
+.list-title:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.accordion-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.container-item-title {
+  flex: 1;
+}
+
+.container-item-arrow {
+  width: 12px;
+  height: 8px;
+  margin-top: 13px;
+  cursor: pointer;
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+}
+
+hr {
+  height: 1px;
+  border-width: 0;
+  background-color: hsl(240, 5%, 91%);
+}
+
+.focused {
+  font-weight: 700;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
 
 /* --------------------- Attribution -------------------- */
