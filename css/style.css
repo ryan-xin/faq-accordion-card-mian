@@ -1,0 +1,31 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  
+}
+
+.main-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -255px;
+  margin-left: -460px;
+  width: 920px;
+  height: 510px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+/* --------------------- Attribution -------------------- */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
